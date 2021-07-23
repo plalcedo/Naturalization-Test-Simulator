@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Roboto&display=swap');
+
+/*
+    Fuentes: 
+    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --rojo: #bf0b30;
+    --azul: #002768;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    color: black;
+}
+
+button {
+    border: 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/usaFlag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.redBtn {
+    text-decoration: none;
+    background-color: #bf0b30;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+}
+
+.redBtn:hover {
+    background-color: #8a0b24;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.text-white {
+    color: black;
+    padding: 5px 0px;
+}
+
+.text-alert {
+    color: var(--rojo);
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.inputName {
+    padding: 5px;
+}
+
+.inputAnswer {
+    padding: 10px;
+}
+
+.question {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.txtRojo {
+    color: red;
+}
+
+.txtVerde {
+    color: green;
+}
+
+#btnAnswers {
+    width: 100%;
+}
+
+#btnStartOver {
+    width: 50%;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+}

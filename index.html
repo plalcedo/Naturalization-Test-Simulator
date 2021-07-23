@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="assets/img/usaIcon.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Naturalization Test</title>
+</head>
+
+<body>
+
+    <div class="wrapper" id="background">
+        <div class="content" id="login">
+            <h1>Naturalization Test Simulator</h1>
+            <label for="" class="text-white">Your name</label>
+            <input type="text" class="inputName" id="name">
+            <button class="redBtn" id="btnStart">Start</button>
+            <p class="text-alert" id="alert-name">Enter your name to continue</p>
+        </div>
+        <div class="question" id="question-box">
+            <h2>Question #<span id="question-number"></span></h2>
+            <h3 id="question-description" class="margin-top"></h3>
+            <label for="" class="margin-top margin-bottom">Your answer</label>
+            <input type="text" id="answer" class="inputAnswer">
+            <button id="btnNext" class="redBtn">Next question</button>
+            <p class="text-alert" id="alert-answer">Can't continue with a blank answer</p>
+        </div>
+        <div class="question" id="completed">
+            <h2>You finished your test!</h2>
+            <h3 class="margin-top">Right answers: <span id="aciertos"></span></h3>
+            <h3>Wrong answers: <span id="fallos"></span></h3>
+
+            <h3 class="margin-top">Result: <span id="resultado"></span></h3>
+            <a href="index.html" class="redBtn">Start over<a>
+            <button id="btnAnswers" class="redBtn">Check answers</button>
+        </div>
+    </div>
+    
+    
+    <div class="question" id="answers">
+        <h2>Your answers</h2>
+        <div id="cuadroRespuestas">
+    
+        </div>
+        <a href="index.html" class="redBtn" id="btnStartOver">Start over<a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
