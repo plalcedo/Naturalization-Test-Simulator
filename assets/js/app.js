@@ -914,6 +914,13 @@ function verificarPregunta(respuesta, pregunta) {
     var question = cuestionario[pregunta].question;
     insertarRespuesta(correct, respuesta, question);
 
+    var espacioRespuestas = document.getElementById("cuadroRespuestas");
+    for (var i = 0; i < longitud; i++) {
+        var textoPosibleRespuesta = document.createElement("h3");
+        textoPosibleRespuesta.innerHTML = cuestionario[pregunta].answer[i];
+        espacioRespuestas.appendChild(textoPosibleRespuesta);
+    }
+
 
     if (contadorPreguntas <= cantidadPreguntas) {
         // Buscamos la siguiente pregunta
