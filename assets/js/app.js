@@ -738,7 +738,7 @@ var cuestionario = {
     93: {
         question: "What is the capital of the United States?",
         answer: {
-            0: "washington, d.c.",
+            0: "washington d.c.",
             1: "dc",
             2: "d.c.",
         },
