@@ -141,7 +141,7 @@ var cuestionario = {
     19: {
         question: "Who is one of your state’s U.S. Senators now? (Question for Louisiana, type full names)",
         answer: {
-            0: "john neely Kennedy",
+            0: "john neely kennedy",
             1: "bill cassidy"
         },
     },
