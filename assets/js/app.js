@@ -925,7 +925,7 @@ function verificarPregunta(respuesta, pregunta) {
             $("#completed").fadeIn();
             $("#aciertos").text(aciertos);
             $("#fallos").text(fallos);
-            if (aciertos > 6) {
+            if (aciertos >= 6) {
                 $("#resultado").text("Oh yes! Good job " + name + ".");
             } else {
                 $("#resultado").text("Sorry... Keep trying " + name + "!")
