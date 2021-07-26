@@ -461,7 +461,7 @@ var cuestionario = {
     61: {
         question: "Who wrote the Declaration of Independence? (Last name)",
         answer: {
-            0: "Jefferson"
+            0: "jefferson"
         },
     },
     62: {
