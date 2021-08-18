@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Roboto&display=swap');
+
+/*
+    Fuentes: 
+    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --rojo: #bf0b30;
+    --azul: #002768;
+}
+
+
+/* Etiquetas */
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    border: 0;
+}
+
+
+/* Clases */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul);
+    width: 20vw;
+    height: 100vh;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 80vw;
+    height: 100vh;
+    padding: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.redBtn {
+    text-decoration: none;
+    background-color: #bf0b30;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+}
+
+.redBtn:hover {
+    background-color: #8a0b24;
+}
+
+
+/* Dashboard */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.titleDashboard {
+    color: white;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.links a:hover {
+    background-color: #bf0b30;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+}
+
+.links a i {
+    margin-right: 5px;
+}
+
+
+/* Home */
+
+.home p {
+    margin-top: 10px;
+}
+
+.home div {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* Id's */
+
+#study {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

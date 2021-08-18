@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,49 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="assets/img/usaIcon.png">
     <link rel="stylesheet" href="assets/css/index.css">
-    <title>Naturalization Test</title>
+    <title>Naturalization Test | Login</title>
 </head>
 
 <body>
 
-    <div class="wrapper" id="background">
-        <div class="content" id="login">
+    <div class="wrapper">
+        <div class="box">
             <h1>Naturalization Test Simulator</h1>
-            <label for="" class="text-white">Your name</label>
-            <input type="text" class="inputName" id="name">
-            <button class="redBtn" id="btnStart">Start</button>
-            <p class="text-alert" id="alert-name">Enter your name to continue</p>
+            <h2>Log in into your account</h2>
+            <form action="submit" id="loginForm" class="form">
+                <label for="">Email</label>
+                <input type="email" id="email" class="input" placeholder="example@email.com">
+                <label for="">Password</label>
+                <input type="password" id="password" class="input" placeholder="Your password">
+                <button type="submit" class="redBtn" id="btnLogIn">Log in</button>
+                <p id="txtError" class="text-alert"></p>
+                <a href="register.html">Do not have an account? Click here</a>
+            </form>
         </div>
-        <div class="question" id="question-box">
-            <h2>Question #<span id="question-number"></span></h2>
-            <h3 id="question-description" class="margin-top"></h3>
-            <label for="" class="margin-top margin-bottom">Your answer</label>
-            <input type="text" id="answer" class="inputAnswer">
-            <button id="btnNext" class="redBtn">Next question</button>
-            <p class="text-alert" id="alert-answer">Can't continue with a blank answer</p>
-        </div>
-        <div class="question" id="completed">
-            <h2>You finished your test!</h2>
-            <h3 class="margin-top">Right answers: <span id="aciertos"></span></h3>
-            <h3>Wrong answers: <span id="fallos"></span></h3>
+    </div>
 
-            <h3 class="margin-top">Result: <span id="resultado"></span></h3>
-            <a href="index.html" class="redBtn">Start over<a>
-            <button id="btnAnswers" class="redBtn">Check answers</button>
-        </div>
-    </div>
-    
-    
-    <div class="question" id="answers">
-        <h2>Your answers</h2>
-        <div id="cuadroRespuestas">
-    
-        </div>
-        <a href="index.html" class="redBtn" id="btnStartOver">Start over<a>
-    </div>
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
