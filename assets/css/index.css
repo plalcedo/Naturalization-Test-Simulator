@@ -92,6 +92,12 @@ button {
     text-align: center;
 }
 
+.text-green {
+    color: green;
+    padding: 5px 0px;
+    text-align: center;
+}
+
 .inputName {
     padding: 5px;
 }

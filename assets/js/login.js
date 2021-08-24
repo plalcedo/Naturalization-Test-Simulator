@@ -11,19 +11,14 @@ $("#btnLogIn").click((event) => {
         $("#txtError").fadeOut();
         $("#txtError").text("");
 
-        // Por los momentos es un usuario estático 
-        // Email: admin@nts.com
-        // Password: 123
-
-        if (email == "admin@nts.com" && password == "123") {
-            $("#txtError").fadeOut();
-            $("#txtError").text("");
-            // Log in
-            location.href = "home.html"
-        } else {
+        auth.signInWithEmailAndPassword(email, password).then(userCredential => {
+            location.href = "home.html";
+        }).catch(error => {
+            var errorMessage = error.message;
             $("#txtError").fadeIn();
-            $("#txtError").text("The email or password are incorrect");
-        }
+            $("#txtError").text(errorMessage);
+        });
+
     } else {
         $("#txtError").fadeIn();
         $("#txtError").text("Fill in all the fields");

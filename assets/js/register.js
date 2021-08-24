@@ -21,24 +21,27 @@ $("#btnSignIn").click((event) => {
             $("#txtError").fadeOut();
             $("#txtError").text("");
 
-            // Se debe realizar el registro y realizar verificaciones si el email no se está usando
-            // Si todo sale bien la variable booleana cambiara, por prueba se mantendrá en true
-
-            var registro = true;
-
-            if (registro) {
-                $("#txtError").fadeOut();
-                $("#txtError").text("");
-
-                $("#formRegister").fadeOut();
-                $("#h1").fadeOut();
-                $("#title").text("Your account was successfully created");
-                $("#btnGoToLogIn").fadeIn();
-            } else {
+            auth.createUserWithEmailAndPassword(email, password).then(userCredential => {
+                db.collection('users').doc().set({
+                    name,
+                    lastName,
+                    email
+                }).then(() => {
+                    $("#txtSuccess").fadeIn();
+                    $("#txtSuccess").text("Your account has been created. You are going to be redirected to login page in 5 seconds");
+                    setTimeout(() => {
+                        location.href = "index.html";
+                    }, 5000);
+                }).catch(error => {
+                    var errorMessage = error.message;
+                    $("#txtError").fadeIn();
+                    $("#txtError").text(errorMessage);
+                });
+            }).catch(error => {
+                var errorMessage = error.message;
                 $("#txtError").fadeIn();
-                $("#txtError").text("There was an error creating your account");
-            }
-
+                $("#txtError").text(errorMessage);
+            });
         } else {
             $("#txtError").fadeIn();
             $("#txtError").text("The passwords does not match");

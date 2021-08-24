@@ -28,11 +28,36 @@
                 <input type="password" id="password2" class="input">
                 <button type="submit" class="redBtn" id="btnSignIn">Create account</button>
                 <p id="txtError" class="text-alert"></p>
+                <p id="txtSuccess" class="text-green"></p>
                 <a href="index.html">Already have an account? Click here</a>
             </form>
             <button id="btnGoToLogIn" class="redBtn">Go to Login</button>
         </div>
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCrLIMqSsk1AMgIyNBRe1wP45_RjQCT9J4",
+            authDomain: "naturalization-test-simulator.firebaseapp.com",
+            projectId: "naturalization-test-simulator",
+            storageBucket: "naturalization-test-simulator.appspot.com",
+            messagingSenderId: "273014912941",
+            appId: "1:273014912941:web:271c00de27454019b75324"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
     <script src="assets/js/register.js"></script>

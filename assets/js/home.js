@@ -5,6 +5,14 @@ $(document).ready(() => {
     $("#profile").hide();
 });
 
+window.addEventListener('DOMContentLoaded', async(e) => {
+    auth.onAuthStateChanged(async user => {
+        if (!user) {
+            location.href = "index.html";
+        }
+    });
+});
+
 // Botones del dashboard
 
 $("#btnHome").click(() => {
@@ -53,6 +61,12 @@ $("#btnProfile").click(() => {
     $("#statistics").hide();
     $("#profile").fadeIn();
     $("#welcome").hide();
+});
+
+$("#btnLogOut").click(() => {
+    auth.signOut().then(() => {
+        location.href = "index.html";
+    });
 });
 
 // Botón de descargar PDF

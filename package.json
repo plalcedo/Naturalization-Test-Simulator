@@ -1,0 +1,22 @@
+{
+  "name": "naturalization-test-simulator",
+  "version": "1.0.0",
+  "description": "Página web con un simulador de para la prueba de ciudadanía americana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plalcedo/Naturalization-Test-Simulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plalcedo/Naturalization-Test-Simulator/issues"
+  },
+  "homepage": "https://github.com/plalcedo/Naturalization-Test-Simulator#readme",
+  "dependencies": {
+    "firebase": "^8.10.0"
+  }
+}
